@@ -2,8 +2,6 @@
 
 //sudo apt install libmagickwand-dev imagemagick
 
-$inputImageFullPath = __DIR__ . "/src/test3m.jpg";
-$outputImageFullPath = __DIR__ . "/dist/test3m.jpg";
 
 function qualityCompress($inputImageFullPath, $outputImageFullPath, $quality = 75)
 {
