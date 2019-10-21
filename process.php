@@ -24,7 +24,7 @@ function compress($inputImageFullPath, $outputImageFullPath, $quality = 75)
     echo "start process $inputImageFullPath quality $quality\n";
     $quality = qualityCompress($inputImageFullPath, $outputImageFullPath, $quality);
     if ($quality) {
-        $targetSize = 0.26 * 1024 * 1024;
+        $targetSize = 0.26 * 1024 * 1024;//here let the size of every image is less than 260 KByte
         $currentSize = filesize($outputImageFullPath);
         echo "current size $currentSize \n";
         echo "target size $targetSize \n";
